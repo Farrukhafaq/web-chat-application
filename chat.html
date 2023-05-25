@@ -1,0 +1,52 @@
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JS Chat</title>
+
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/chat.js"></script>
+	<script src="js/dynamicChat.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/chat.css">
+
+</head>
+
+<body>
+	<div class="live-chat-icon">
+		<a href="javascript:" class="live-chat-icon-anchor">
+			<img src="images/chat-icon.png" alt="chat icon">
+		</a>
+	</div>
+	<div class="chat-widget">
+		<div class="chat-titlebar">
+			<div class="left-container">
+				<div class="icon">
+					<img src="images/chaticon.svg" alt="chat icon">
+				</div>
+				<p class="title">JS Chat</p>
+			</div>
+			<div class="right-container">
+				<div class="btn-group">
+					<a href="javscript:" id="minimize-btn" class="close-minimize-btns">
+						<img src="images/chat-minus.svg" alt="minus button">
+					</a>
+					<a href="javscript:" id="close-btn" class="close-minimize-btns">
+						<img src="images/chat-cross.svg" alt="cross button">
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="chat-body">
+			<div id="chatHistory" class="chat-history"></div>
+			<div id="liveChat" class="live-chat"></div>
+		</div>
+		<div class="chat-buttons-container">
+			<textarea id="chatInput" class="chat-input" rows="3" placeholder='Type your question here...'></textarea>
+			<a href="javascript:" id="chatSubmit">
+				<img src="images/chat-send.PNG" alt="chat send">
+			</a>
+		</div>
+	</div>
+</body>
+</html>
